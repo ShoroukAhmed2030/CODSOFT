@@ -2,7 +2,7 @@
 using namespace std;
 
 double num1, num2, ans;
-char opr;
+char opr;  int flage=0;
 
 double sum(double, double);
 double sub(double, double);
@@ -32,16 +32,18 @@ int main() {
         ans = mul(num1, num2); break;
       case '/':
         if (num2 == 0) {
-          cout << "ERROR: Can't divide by zero.";
+          cout << "ERROR: Can't divide by zero."<<endl ;
+          flage=1;
         } else {
           ans = div(num1, num2); 
         } break;
       default:
-        cout << "Wrong operation."; break;
+        cout << "Wrong operation."<<endl ;
+        flage=1; break;;
     }
+    if(flage==0)
     cout << num1 << opr << num2 << " = " << ans<<endl;
   }
-
   return 0;
 }
 
