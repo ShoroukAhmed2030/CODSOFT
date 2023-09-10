@@ -2,7 +2,7 @@
 using namespace std;
 
 double num1, num2, ans;
-char opr;  int flage=0;
+char opr;  int flage ;
 
 double sum(double, double);
 double sub(double, double);
@@ -19,7 +19,7 @@ int main() {
     cin >> num2;
     cout << "Enter the operation (+, -, *, /): ";
     cin >> opr;
-
+    flage=0;
     
     switch (opr) {
       case '+':
@@ -43,7 +43,7 @@ int main() {
     }
     if(flage==0)
     cout << num1 << opr << num2 << " = " << ans<<endl;
-  }
+  } 
   return 0;
 }
 
