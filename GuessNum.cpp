@@ -20,7 +20,6 @@ int main() {
     cout << "wrong!, Your guessing number is greater than number"<<endl;
     } else  
     cout << "wrong!, Your guessing number is less than number"<<endl;
-  cin >> Guess_num;
  } 
   return 0;
 }
